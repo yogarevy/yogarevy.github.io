@@ -300,6 +300,7 @@ a:focus {
 }
 
 .wave-one {
+    z-index: -1;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -309,6 +310,7 @@ a:focus {
     /*margin-top: -100px;*/
     border-radius: 35%;
     background: #005cbf;
+    opacity: 0.5;
     animation: wave-one 15s infinite linear;
 }
 
@@ -318,6 +320,7 @@ a:focus {
 }
 
 .wave-two {
+    z-index: -1;
     width: 60px;
     height: 60px;
     position: absolute;
@@ -327,6 +330,7 @@ a:focus {
     /*margin-top: -100px;*/
     border-radius: 35%;
     background: #005cbf;
+    opacity: 0.5;
     animation: wave-two 15s infinite linear;
 }
 
@@ -336,6 +340,7 @@ a:focus {
 }
 
 .wave-three {
+    z-index: -1;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -345,6 +350,7 @@ a:focus {
     /*margin-top: -100px;*/
     border-radius: 35%;
     background: #005cbf;
+    opacity: 0.5;
     animation: wave-three 15s infinite linear;
 }
 
@@ -354,6 +360,7 @@ a:focus {
 }
 
 .wave-four {
+    z-index: -1;
     width: 200px;
     height: 200px;
     position: absolute;
@@ -363,6 +370,7 @@ a:focus {
     /*margin-top: -100px;*/
     border-radius: 35%;
     background: #005cbf;
+    opacity: 0.5;
     animation: wave-four 15s infinite linear;
 }
 
@@ -372,6 +380,7 @@ a:focus {
 }
 
 .wave-five {
+    z-index: -1;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -381,6 +390,7 @@ a:focus {
     /*margin-top: -100px;*/
     border-radius: 35%;
     background: #005cbf;
+    opacity: 0.5;
     animation: wave-five 15s infinite linear;
 }
 
