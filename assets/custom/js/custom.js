@@ -31,14 +31,24 @@
     // });
 
     $('li a').on('click', function() {
-        var scrollAnchor = $(this).attr('data-scroll'),
+        let scrollAnchor = $(this).attr('data-scroll'),
             scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 200;
         $('body,html').animate({
             scrollTop: scrollPoint
         }, 500);
 
         return false;
-    })
+    });
+
+    $('#seemore').on('click', function() {
+        let scrollAnchorBtn = $(this).attr('data-scroll'),
+            scrollPointBtn = $('section[data-anchor="' + scrollAnchorBtn + '"]').offset().top - 200;
+        $('body,html').animate({
+            scrollTop: scrollPointBtn
+        }, 500);
+
+        return false;
+    });
 
     $(this).scrollTop(0);
     $('li:first').addClass('active');
