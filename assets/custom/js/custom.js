@@ -23,13 +23,6 @@
         return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
     };
 
-    // $("li").click(function() {
-    //     // remove classes from all
-    //     $("li").removeClass("active");
-    //     // add class to the one we clicked
-    //     $(this).addClass("active");
-    // });
-
     $('li a').on('click', function() {
         let scrollAnchor = $(this).attr('data-scroll'),
             scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 200;
