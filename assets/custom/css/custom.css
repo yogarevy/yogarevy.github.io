@@ -2,29 +2,25 @@ html {
     scroll-behavior: smooth;
 }
 
-/*body {*/
-/*    background-color: lightblue;*/
-/*}*/
-
 .navbar {
     -webkit-box-shadow: 0 10px 6px -6px #aeaeae;
     -moz-box-shadow: 0 10px 6px -6px #aeaeae;
     box-shadow: 0 10px 6px -6px #aeaeae;
 }
 
-.navbar-nav li > a {
+.navbar-nav li > .nav-link {
     text-transform: capitalize;
     color: #007bff;
-    transition: background-color .2s, color .2s;
-    border-radius: 20px;
+    transition: background-color 0.2s, color 0.2s;
+    border-radius: 10px;
 }
 
-.navbar-nav li > a:hover {
+.navbar-nav li > .nav-link:hover {
     background-color: #007bff !important;
     color: #fff !important;
 }
 
-.navbar-nav li.active > a {
+.navbar-nav li.active > .nav-link {
     background-color: #007bff !important;
     color: #fff !important;
 }
@@ -56,13 +52,6 @@ a.perbuttonan > a:focus {
     border: 1px solid #b7b7be;
     border-radius: 50%;
     overflow: hidden;
-}
-
-.centered {
-    width: 90%;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .title {
@@ -126,23 +115,6 @@ a.perbuttonan > a:focus {
     font-weight: bold;
 }
 
-.image-section-two {
-    position: relative;
-    width: 100%;
-}
-
-.text-section-two {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.subtitle-section-two {
-    font-size: 14pt;
-}
-
 .card-service {
     position: relative;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -167,8 +139,8 @@ a.perbuttonan > a:focus {
     transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .card-service:hover {
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1, 1.1);
+    transform: scale(1, 1.1);
 }
 
 .card-service:hover::after {
@@ -305,7 +277,7 @@ a:focus {
     height: 100px;
     position: absolute;
     bottom: 0px;
-    left: 0px;
+    left: 25px;
     /*margin-left: -100px;*/
     /*margin-top: -100px;*/
     border-radius: 35%;
@@ -345,7 +317,7 @@ a:focus {
     height: 100px;
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: 24px;
     /*margin-left: -100px;*/
     /*margin-top: -100px;*/
     border-radius: 35%;
@@ -365,7 +337,7 @@ a:focus {
     height: 200px;
     position: absolute;
     top: 500px;
-    right: 0px;
+    right: 42px;
     /*margin-left: -100px;*/
     /*margin-top: -100px;*/
     border-radius: 35%;
@@ -385,7 +357,7 @@ a:focus {
     height: 100px;
     position: absolute;
     top: 60px;
-    left: 0px;
+    left: 25px;
     /*margin-left: -100px;*/
     /*margin-top: -100px;*/
     border-radius: 35%;
@@ -401,28 +373,9 @@ a:focus {
 
 /* mobile navbar sidebar under lg breakpoint */
 @media (max-width: 992px) {
-    .overlay-one {
-        display: none;
-    }
-
     .image-section-one {
         position: unset;
         width: 200px;
-    }
-    .centered {
-        position: unset;
-        width: 100%;
-        transform: none;
-    }
-
-    .image-section-two {
-        position: unset;
-        width: 100%;
-    }
-    .text-section-two {
-        position: unset;
-        width: 100%;
-        transform: none;
     }
 
     .grid-social {

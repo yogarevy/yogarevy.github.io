@@ -54,12 +54,10 @@
     $('li:first').addClass('active');
     $(window).scroll(function() {
         let windscroll = $(window).scrollTop();
-        console.log(windscroll);
 
         if (windscroll >= 0) {
             $('.row-wrapper section').each(function(i) {
                 if ($(this).position().top <= windscroll + 200) {
-                    console.log($(this).position().top);
                     $('li.active').removeClass('active');
                     $('#section_' + i).addClass('active');
                 }
